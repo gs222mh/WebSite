@@ -8,6 +8,7 @@ body {
   color: white;
 }
 .switch {
+  left: 910px;
   position: relative;
   display: inline-block;
   width: 40px;

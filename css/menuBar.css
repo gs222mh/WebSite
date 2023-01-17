@@ -1,19 +1,19 @@
 
 .nav-content{
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     position: relative;
-top: -20px;
+    top: -25px;
 }
 .link-item{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100px;
+    height: 40px;
     width: 120px;
     text-decoration: none;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
