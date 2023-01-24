@@ -1,0 +1,12 @@
+#rectangle{
+    margin-left: 65%;
+    width: 330px;
+    height:400px;
+    background:#d7d4d4;
+    border-radius: 40px;
+    box-shadow: 25px 15px 15px #838282;
+}
+@-webkit-keyframes spin {
+    0%    { -webkit-transform: rotateY(0deg); }
+    100%  { -webkit-transform: rotateY(360deg); }
+    }
