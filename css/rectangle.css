@@ -1,34 +1,42 @@
-#rectangle{
+#Rectangle_Right{
+  padding: 20px;
     margin-left: auto;
     width: 400px;
     height:400px;
     background:#d7d4d4;
     border-radius: 40px;
-    box-shadow: 25px 15px 15px #838282;
+    box-shadow: 15px 10px 10px #838282;
     transform: perspective( 1500px ) rotateY( -15deg );
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation: runRight 1.5s 1 linear;
                   
 }
-@-webkit-keyframes run {
-  0% {
+
+@keyframes runRight {
+  from {
     margin-left: 100%;
   }
-  25% {
-    margin-left: 91%;
-  }
-  50% {
-    margin-left: 83%;
-  }
-  75% {
-    margin-left: 74%;
-  }
-  100% {
-    margin-left: auto;
+  to {
+    margin-left: 71.5%;
   }
 }
-      
- 
+p {
+  margin: auto;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
         
