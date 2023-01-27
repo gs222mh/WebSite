@@ -1,14 +1,35 @@
-#Rectangle_Right{
-  padding: 20px;
+#Rectangle_Right_Up{
+    padding: 20px;
     margin-left: auto;
     max-width:25%;
     height:auto;
     background:#d7d4d4;
     border-radius: 40px;
     box-shadow: 0px 0px 30px #838282;
-    border: 3px;
-    animation: runRight 1.5s 1 linear;
-                  
+    text-align:center;
+    animation: runRight 3s 1 linear;          
+}
+#Rectangle_Right_Middle{
+    padding: 20px;
+    margin-left: auto;
+    max-width:35%;
+    height:auto;
+    background:#d7d4d4;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #838282;
+    text-align:center;
+    animation: runRight 1.5s 1 linear;          
+}
+#Rectangle_Right_Down{
+    padding: 20px;
+    margin-left: auto;
+    max-width:55%;
+    height:auto;
+    background:#d7d4d4;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #838282;
+    text-align:center;
+    animation: runRight 2s 1 linear;          
 }
 
 @keyframes runRight {
@@ -21,24 +42,22 @@
 }
 
 p {
-    font-size:1vw;
-    margin: auto;
-    animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  text-align: center;
+  font-size: 20px;
+  background: linear-gradient(90deg, #000, #d7d4d4);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 70%;
+  animation: shine 7s linear infinite;
 }
 
-@keyframes typing {
-  from {
-    margin-left: 100%;
-    width: 300%;
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
   }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
+  100% {
+    background-position-x: 500%;
   }
 }
-
-
         
