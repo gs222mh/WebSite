@@ -1,32 +1,25 @@
 .container{
   display: inline-block;
-}
-
-p {
-  border-right: solid 7px rgba(0,255,0,.75);
-  white-space: nowrap;
-  overflow: hidden;
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
-  color: rgba(255,255,255,.70);
+  place-items: center;
 }
 
-/* Animation */
-p {
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 9s steps(30, end) forwards, blinking 1s infinite;
 }
 
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 100%;}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinking {
+  0% {border-color: transparent}
+  50% {border-color: red}
+  100% {border-color: transparent}
 }
