@@ -1,3 +1,4 @@
+/* Rectangle style*/
 .rectangle {
   position: fixed;
   width: auto;
@@ -6,10 +7,10 @@
   right: 10px;
   bottom: 10px;
   top: 10px;
-  background-color: #dcdedb;
+  background-color: #535553;
   border-radius: 20px;
   border: 1px solid #000000;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 .rectangle_top {
   padding: 15px;
@@ -19,26 +20,49 @@
   border-top-right-radius: 20px;
   background-color: #b9bcb8;
   border-bottom:1px solid #c2baba;
-
 }
 .circle_close {
   height: 15px;
   width: 15px;
   background-color: #FF605C;
   border-radius: 50%;
-  display:inline-flex;
+  display: inline-block;
 }
 .circle_minimize {
   height: 15px;
   width: 15px;
   background-color: #FFBD44;
   border-radius: 50%;
-  display:inline-flex;
+  display: inline-block;
 }
 .circle_expand {
   height: 15px;
   width: 15px;
   background-color: #00CA4E;
   border-radius: 50%;
-  display:inline-flex;
+  display: inline-block;
+}
+
+/* Text style */
+.rectangle p{
+  padding: 10px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.inputText{
+  font-family: "Lucida Console", "Courier New", monospace;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 16px;
+}
+.rectangle input{
+
+  background-color: #535553;
+  border: 0px;
+  margin-left: 10px;
+  position: fixed;
+  width: auto;
+  height: auto;
 }
